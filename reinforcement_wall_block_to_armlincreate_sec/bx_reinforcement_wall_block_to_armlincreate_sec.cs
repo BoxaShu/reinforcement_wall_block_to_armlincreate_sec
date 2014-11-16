@@ -121,84 +121,101 @@ namespace reinforcement_wall_block_to_armlincreate_sec
                                                 {
                                                     //		obj.PropertyName	"KR_number"	string
 
-                                                    if (obj.PropertyName == "KR_number")
-                                                    {
-                                                        KR_number = (int)Math.Round(Double.Parse(obj.Value.ToString()), 0);
-                                                    }
+                                                     switch (obj.PropertyName)
+                                                     {
+                                                         case "KR_number":
+                                                             {
+                                                                 KR_number = (int)Math.Round(Double.Parse(obj.Value.ToString()), 0);
+                                                                 break;
+                                                             }
+                                                         case "Raz_number":
+                                                             {
+                                                                 Raz_number = (int)Math.Round(Double.Parse(obj.Value.ToString()), 0);
+                                                                 break;
+                                                             }
+                                                         case "KR_step":
+                                                             {
+                                                                 KR_Step = (int)Math.Round(Double.Parse(obj.Value.ToString()), 0);
+                                                                 break;
+                                                             }
 
-                                                    if (obj.PropertyName == "Raz_number")
-                                                    {
-                                                        Raz_number = (int)Math.Round(Double.Parse(obj.Value.ToString()), 0);
-                                                    }
-                                                    //		obj.PropertyName	"KR_step"	string
+                                                         case "KR_Poz1_diam":
+                                                             {
+                                                                 KR_Poz1_diam = (int)Math.Round(Double.Parse(obj.Value.ToString()), 0);
+                                                                 break;
+                                                             }
 
-                                                    if (obj.PropertyName == "KR_step")
-                                                    {
-                                                        KR_Step = (int)Math.Round(Double.Parse(obj.Value.ToString()), 0);
-                                                    }
+                                                         case "PROD_poz":
+                                                             {
+                                                                 PROD_poz = (int)Math.Round(Double.Parse(obj.Value.ToString()), 0);
+                                                                 break;
+                                                             }
 
-                                                    if (obj.PropertyName == "KR_Poz1_diam")
-                                                    {
-                                                        KR_Poz1_diam = (int)Math.Round(Double.Parse(obj.Value.ToString()), 0);
-                                                    }
+                                                         case "PROD_diam":
+                                                             {
+                                                                 PROD_diam = (int)Math.Round(Double.Parse(obj.Value.ToString()), 0);
+                                                                 break;
+                                                             }
 
-                                                    if (obj.PropertyName == "PROD_poz")
-                                                    {
-                                                        PROD_poz = (int)Math.Round(Double.Parse(obj.Value.ToString()), 0);
-                                                    }
-
-                                                    if (obj.PropertyName == "PROD_diam")
-                                                    {
-                                                        PROD_diam = (int)Math.Round(Double.Parse(obj.Value.ToString()), 0);
-                                                    }
-
-
-                                                    if (obj.PropertyName == "B_st")
-                                                    {
-                                                        B_st = Math.Round(Double.Parse(obj.Value.ToString()), 0);
-                                                    }
+                                                        case "B_st":
+                                                            {
+                                                                B_st = Math.Round(Double.Parse(obj.Value.ToString()), 0);
+                                                                break;
+                                                            }
 
                                           
-                                                    if (obj.PropertyName == "H_St")
-                                                    {
-                                                        H_st = Math.Round(Double.Parse(obj.Value.ToString()), 0);
-                                                    }
+                                                        case "H_St":
+                                                            {
+                                                                H_st = Math.Round(Double.Parse(obj.Value.ToString()), 0);
+                                                                break;
+                                                            }
                                                     
-                                                    if (obj.PropertyName == "OTM_Niza")
-                                                    {
-                                                        OTM_Niza = Math.Round(Double.Parse(obj.Value.ToString()), 0);
-                                                    }
+                                                        case "OTM_Niza":
+                                                            {
+                                                                OTM_Niza = Math.Round(Double.Parse(obj.Value.ToString()), 0);
+                                                                break;
+                                                            }
 
-                                                    if (obj.PropertyName == "ZS_niz")
-                                                    {
-                                                        ZS_niz = Math.Round(Double.Parse(obj.Value.ToString()), 0);
-                                                    }
+                                                        case "ZS_niz":
+                                                            {
+                                                                ZS_niz = Math.Round(Double.Parse(obj.Value.ToString()), 0);
+                                                                break;
+                                                            }
 
-                                                    if (obj.PropertyName == "ZS_verh")
-                                                    {
-                                                        ZS_verh = Math.Round(Double.Parse(obj.Value.ToString()), 0);
-                                                    }
+                                                        case "ZS_verh":
+                                                            {
+                                                                ZS_verh = Math.Round(Double.Parse(obj.Value.ToString()), 0);
+                                                                break;
+                                                            }
 
-                                                    if (obj.PropertyName == "ZS_lev")
-                                                    {
-                                                        ZS_lev = Math.Round(Double.Parse(obj.Value.ToString()), 0);
-                                                    }
-                                                    if (obj.PropertyName == "ZS_prav")
-                                                    {
-                                                        ZS_prav = Math.Round(Double.Parse(obj.Value.ToString()), 0);
-                                                    }
+                                                        case "ZS_lev":
+                                                            {
+                                                                ZS_lev = Math.Round(Double.Parse(obj.Value.ToString()), 0);
+                                                                break;
+                                                            }
+                                                        case "ZS_prav":
+                                                            {
+                                                                ZS_prav = Math.Round(Double.Parse(obj.Value.ToString()), 0);
+                                                                break;
+                                                            }
 
-                                                    //Poper_step
-                                                    if (obj.PropertyName == "Poper_step")
-                                                    {
-                                                        Poper_step = Math.Round(Double.Parse(obj.Value.ToString()), 0);
-                                                    }
+                                                        //Poper_step
+                                                        case "Poper_step":
+                                                            {
+                                                                Poper_step = Math.Round(Double.Parse(obj.Value.ToString()), 0);
+                                                                break;
+                                                            }
 
-                                                    //Distance1
-                                                    if (obj.PropertyName == "Distance1")
-                                                    {
-                                                        Distance1 = Math.Round(Double.Parse(obj.Value.ToString()), 0);
-                                                    }
+                                                        //Distance1
+                                                        case "Distance1":
+                                                            {
+                                                                Distance1 = Math.Round(Double.Parse(obj.Value.ToString()), 0);
+                                                                break;
+                                                            }
+                                                         
+                                                        default:
+                                                            break;
+                                                     }
 
                                                 }
                                             }
